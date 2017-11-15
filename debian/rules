@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	PWD=$(PWD) ./configure --prefix=/usr --enable-lang-all \
+	--enable-gtk2 --enable-cli --ruby=/lib/rubyripper
+
+override_dh_clean:
+	dh_clean locale/*/*/*.mo

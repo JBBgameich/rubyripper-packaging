@@ -1,0 +1,25 @@
+Source: rubyripper
+Section: sound
+Priority: extra
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Homepage: http://code.google.com/p/rubyripper/
+Standards-Version: 4.1.1
+Build-Depends: debhelper (>= 9),
+               ruby-gettext,
+               ruby,
+               cdparanoia
+
+Package: rubyripper
+Architecture: all
+Depends: ${misc:Depends},
+         ruby,
+         cdparanoia,
+         ruby-gtk2,
+         eject
+Recommends: normalize-audio, vorbisgain, mp3gain, flac, vorbis-tools
+Suggests: lame, cd-discid
+Description: Digital audio extraction algorithm.
+ It uses cdparanoia in a sophisticated way to make sure that a CD rip is
+ done successfully and accurately. It is very similar to and inspired by
+ EAC. Rubyripper is written in the ruby programming language.
