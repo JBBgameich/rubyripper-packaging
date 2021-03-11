@@ -7,6 +7,7 @@ Standards-Version: 4.1.1
 Build-Depends: debhelper-compat (= 13),
                ruby-gettext,
                ruby,
+               ruby-gtk3,
                cdparanoia
 
 Package: rubyripper
@@ -14,7 +15,7 @@ Architecture: all
 Depends: ${misc:Depends},
          ruby,
          cdparanoia,
-         ruby-gtk2,
+         ruby-gtk3,
          eject
 Recommends: normalize-audio,
             vorbisgain,
