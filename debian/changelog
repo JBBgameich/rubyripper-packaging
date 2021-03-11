@@ -1,3 +1,9 @@
+rubyripper (0.8.0~rc1-1) UNRELEASED; urgency=medium
+
+  * New release candidate
+
+ -- Jonah Brüchert <jbb@kaidan.im>  Thu, 11 Mar 2021 22:47:16 +0100
+
 rubyripper (0.7.0~rc2-1) unstable; urgency=medium
 
   * New release candidate
